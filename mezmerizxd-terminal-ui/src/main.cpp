@@ -17,7 +17,6 @@ int main()
 
             return 0;
         }, NULL, 0, NULL);
-
     if (g_main_thread == NULL)
     {
         return 1;
@@ -27,6 +26,5 @@ int main()
     CloseHandle(g_main_thread);
 
     std::cout << "Thread Closed, now exiting...";
-
     return 0;
 }
